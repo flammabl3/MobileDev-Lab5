@@ -1,4 +1,5 @@
 import { View, Image } from "react-native";
+import Back from '../components/back';
 
 export default function Orange() {
     return (
@@ -8,6 +9,7 @@ export default function Orange() {
                     require('../assets/Orange_Orange.jpg')
                 }
             />
+            <Back></Back>
         </View>
     )
 }

@@ -1,4 +1,5 @@
 import { View, Image } from "react-native";
+import Back from '../components/back';
 
 export default function Apple() {
     return (
@@ -8,6 +9,7 @@ export default function Apple() {
                     require('../assets/Red_Apple.jpg')
                 }
             />
+            <Back/>
         </View>
     )
 }
