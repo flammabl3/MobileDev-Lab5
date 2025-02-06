@@ -3,7 +3,7 @@ import { View, Text, Button, StyleSheet, TouchableOpacity } from 'react-native';
 
 type IncrementProps = {
     count: number;
-    setCount: React.Dispatch<React.SetStateAction<number>>;
+    setCount: (count : number) => void;
 }
 
 const Increment: React.FC<IncrementProps> = ({ count, setCount }) => {

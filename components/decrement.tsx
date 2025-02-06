@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 type DecrementProps = {
     count: number;
-    setCount: React.Dispatch<React.SetStateAction<number>>;
+    setCount: (count : number) => void;
 }
 
 const Decrement: React.FC<DecrementProps> = ({ count, setCount }) => {
