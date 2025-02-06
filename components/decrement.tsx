@@ -9,7 +9,7 @@ type DecrementProps = {
 const Decrement: React.FC<DecrementProps> = ({ count, setCount }) => {
     return (
         <View style={styles.container}>
-            <TouchableOpacity onPress={() => setCount(count + 1)} style={styles.rdButton}><Text style={styles.text}>Decrement</Text></TouchableOpacity>
+            <TouchableOpacity onPress={() => setCount(count - 1)} style={styles.rdButton}><Text style={styles.text}>Decrement</Text></TouchableOpacity>
         </View>
     );
 };
