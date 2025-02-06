@@ -9,9 +9,11 @@ const Lab3 = () => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>{count}</Text>
-            <Increment count={count} setCount={setCount}/>
-            <Decrement count={count} setCount={setCount}/>
+            <Text style={styles.text}>My Value: {count}</Text>
+            <View style={styles.buttonContainer}>
+                <Increment count={count} setCount={setCount}/>
+                <Decrement count={count} setCount={setCount}/>
+            </View>
         </View>
     );
 };
@@ -27,6 +29,10 @@ const styles = StyleSheet.create({
         fontSize: 20,
         color: '#000',
     },
+    buttonContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+    }
 });
 
 export default Lab3;

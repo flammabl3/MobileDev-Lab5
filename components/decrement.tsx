@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 type DecrementProps = {
     count: number;
@@ -9,7 +9,7 @@ type DecrementProps = {
 const Decrement: React.FC<DecrementProps> = ({ count, setCount }) => {
     return (
         <View style={styles.container}>
-            <Button title="Decrement" onPress={() => setCount(count - 1)} />
+            <TouchableOpacity onPress={() => setCount(count + 1)} style={styles.rdButton}><Text style={styles.text}>Decrement</Text></TouchableOpacity>
         </View>
     );
 };
@@ -22,10 +22,18 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
     text: {
-        fontSize: 20,
-        color: '#000',
-        marginBottom: 10,
+        color: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
     },
+    rdButton: {
+        backgroundColor: 'red',
+        padding: 10,
+        borderRadius: 10,
+        margin: 10,
+        width: 100,
+    }
 });
 
 export default Decrement;
