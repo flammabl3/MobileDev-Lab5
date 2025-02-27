@@ -13,8 +13,8 @@ export default function Index() {
     });
 
     return (
-        <View>
-            <Button onPress={() => { router.navigate('page/lab_3')}}  title='Lab 5'/>
+        <View style={styles.container}>
+            <Button onPress={() => { router.navigate('./lab5/lab5')}}  title='Lab 5'/>
         </View> 
     );
 
